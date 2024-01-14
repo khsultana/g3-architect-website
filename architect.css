@@ -91,6 +91,70 @@ main{
     font-weight: 700;
     font-size: 45px;
 }
+
+/* facts Section  */
+
+.facts {
+    padding: 100px;
+}
+.facts h3{
+    font-size: 45px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.facts p{
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 50px;
+    width: 50%;
+}
+
+.award 
+{
+    display: flex;
+    justify-content: space-around;
+}
+.award .award-section{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+       padding: 30px;
+    height: 170px;
+    width: 170px;
+}
+.award-section .number{
+font-size: 1.8rem;
+color: #424242;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.award-section .win{
+    font-size: 20px;
+    color: #727272;
+    margin-top: 10px;
+margin-bottom: 10px;
+}
+
+/* Sponsor Section  */
+.sponsor{
+    text-align: center;
+}
+.sponsor p{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.sponsor-img{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    align-items: center;
+    gap: 20px;
+ 
+}
+
+
 /* Mobile Responsive */
 @media screen and (max-width:576px) {
    header{
@@ -105,6 +169,20 @@ main{
    }
    .teams-img-container{
     grid-template-columns: 1fr;
+   }
+   .award {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+   }
+   .sponsor{
+    flex-direction: column;
+   text-align: center;
+   }
+   .sponsor-img{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
    }
 }
 
